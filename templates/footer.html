@@ -1,0 +1,75 @@
+<!-- <footer class="footer">
+    <div class="container">
+      <center><span class="text-muted" >Copyright @ {%now 'Y'%}</span></center>
+      <!-- <a href="{% url 'ml_app:home'%}">Home</a>
+      <a href="{% url 'ml_app:about'%}">About</a>
+      <a href="#">Github Link</a>
+    </div>
+  </footer> -->
+
+    <!-- Footer -->
+    {% comment %} <footer style="background-color: #212936; color: white; padding: 20px 0; text-align: center;">
+      <p style="margin: 0;">&copy; 2025 Deepify. All Rights Reserved.</p>
+      <p style="margin: 0;">Designed by <a href="#" style="color: #FF7D14; text-decoration: none;">Team 9</a></p>
+    </footer> {% endcomment %}
+
+
+    {% load static %}
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+ 
+
+    <footer id="footer" class="footer dark-background w-100 m-0 p-0">
+      <div class="container-fluid px-0">
+        <div class="text-center py-4">
+          <h3 class="sitename mb-2">{{ site_name|default:"Deepify" }}</h3>
+          <p class="mb-3">
+            {{ site_description|default:"We provide fast, accurate, and reliable deepfake detection to help you verify the authenticity of videos." }}
+          </p>
+          <div class="social-links d-flex justify-content-center gap-3 mb-3">
+            <a href="{{ twitter_url|default:'#' }}"><i class="bi bi-twitter-x"></i></a>
+            <a href="{{ facebook_url|default:'#' }}"><i class="bi bi-facebook"></i></a>
+            <a href="{{ instagram_url|default:'#' }}"><i class="bi bi-instagram"></i></a>
+            <a href="{{ linkedin_url|default:'#' }}"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <div class="copyright mb-2">
+            <span>&copy; {{ current_year|default:2025 }}</span>
+            <strong class="px-1 sitename">{{ site_name|default:"Deepify" }}</strong>
+            <span>All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
